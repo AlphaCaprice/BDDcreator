@@ -10,3 +10,5 @@ Then program checks if all have been done right.
 ``` python flask_server/FlaskServer.py```
 * app will be available on ```localhost:5000```
 
+### Example
+![alt text](example.png)
