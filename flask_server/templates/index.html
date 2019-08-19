@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}" />
+     <script src="{{ url_for('static',filename='js/diagApp.js') }}" defer></script>
+    <script src="//d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/filesaver.js/0.1/FileSaver.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <div id="BDDbox">
+
+  </div>
+  <button id ="addRect">Добавить лист</button>
+  <button id ="addCircle">Добавить узел</button>
+  <button id="checkAnswer">Проверить</button>
+  <div class="logicFormula">
+     <p>
+     </p>
+  </div>
+  <div id="answer">
+    Ответ
+  </div>
+  <div class="tips">
+    <p>Инструкция</p>
+    <ul type="square">
+      <li>Нажмите ctrl + left click при наведении на узел, и удерживая left click, ведите стрелку к другой вершину, чтобы добавить пунктирную линию <p></p></li>
+      <li>Нажмите shift + left click при наведении на узел, и удерживая left click, ведите стрелку к другой вершину, чтобы добавить сплошную линию<p></p></li>
+      <li>Нажмите shift + left click или doubleclick на вершине для изменения имени узла<p></p></li>
+      <li>Наведите на вершину или стрелку и нажмите left click для выделения вершины (она должна изменить цвет). Нажмите клавишу delete или backspace для удаления выделенного элемента <p></p></li>
+      <li>Нажмите кнопку "проверить", чтобы узнать правильность построения диаграммы<p></p></li>
+      <li><b>Порядок переменных во всех функциях: a&ltb&ltc</b><p></p></li>
+    </ul>
+  </div>
+
+
+
+</body>
+</html>

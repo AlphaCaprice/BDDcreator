@@ -1,0 +1,198 @@
+#BDDbox{
+    position: relative;
+    height: 800px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 50px;
+}
+
+div.tips{
+  position: relative;
+  height: 400px;
+  width: 500px;
+  left: 700px;
+  bottom: 720px;
+
+  border: 1px solid black;
+  font-size: 17px;
+  font-family: "Helvetica Neue";
+
+
+}
+
+div.tips p{
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+
+}
+
+#answer{
+  position: relative;
+  height: 100px;
+  width: 200px;
+  left: 700px;
+  bottom: 700px;
+  font-size: 25px;
+  font-family: "Helvetica Neue";
+  display: flex;
+
+}
+
+#checkAnswer{
+  position: relative;
+  left: 700px;
+  bottom: 630px;
+  display: flex;
+
+
+}
+
+div.logicFormula{
+  position: relative;
+  height: 100px;
+  width: 500px;
+  left: 700px;
+  bottom: 800px;
+  border: 2px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+div.logicFormula p{
+  margin: 0;
+  font-size: 25px;
+  font-family: "Helvetica Neue";
+
+}
+
+#addCircle{
+  position: relative;
+  left: 700px;
+  bottom: 875px;
+  display: flex;
+}
+
+#addRect{
+  position: relative;
+  left: 700px;
+  bottom: 800px;
+  display: flex;
+}
+
+#toolbox{
+    position: absolute;
+    bottom: 710px;
+    left: 430px;
+/*
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+*/
+    border: 2px solid #111111;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 5;
+}
+
+#toolbox input{
+    width: 30px;
+    opacity: 0.7;
+}
+#toolbox input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#hidden-file-upload{
+    display: none;
+}
+
+#download-input{
+    margin: 0 0.5em;
+}
+
+#active-editing{
+  font-family: "Times New Roman";
+  font-size: 25px;
+}
+
+marker{
+    fill: #333;
+}
+
+.conceptG text{
+    pointer-events: none;
+    font-family: "Times New Roman";
+    font-size: 25px;
+}
+
+g.conceptG circle{
+    fill: #F62222;
+    stroke: #333;
+    stroke-width: 3px;
+}
+
+g.conceptG rect{
+    fill: #F62222;
+    stroke: #333;
+    stroke-width: 3px;
+}
+
+g.conceptG:hover rect{
+    fill: #E1C7DF;
+}
+
+g.conceptG:hover circle{
+    fill: #E1C7DF;
+}
+
+g.selected rect{
+    fill: #658BCD;
+}
+
+g.selected circle{
+    fill: #658BCD;
+}
+
+g.selected:hover circle{
+    fill: #E1C7DF;
+}
+
+g.selected:hover rect{
+    fill: #E1C7DF;
+}
+
+g.connect-node circle{
+    fill: #BEFFFF;
+}
+
+g.connect-node rect{
+    fill: #BEFFFF;
+
+}
+path.link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 3px;
+    cursor: default;
+    stroke-dasharray: 0; /* 10 для dotted */
+}
+
+path.link.dotted {
+    stroke-dasharray: 10;
+}
+
+path.link:hover{
+    stroke: #658BCD;
+}
+
+
+path.link.hidden{
+    stroke-width: 0;
+}
+
+path.link.selected {
+    stroke: rgb(1, 1, 204);
+}
